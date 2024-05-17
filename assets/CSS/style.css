@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #f8f184;
+    --blue-color: #19587d;
+    --with-color: #ffff;
+    --gradient-white:#eddebfbb;
+    --gradient-red:#89000923;
+    --black-color:#000;
+    --content-color: #c4c4c442;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*typographie titre*/
+
+h1{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+
+
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Space+Grotesk';
+    font-weight: 300;
+
+}
+
+header{
+    background-image: url(../Illustrations/Bathome1.png);
+    background-size: cover; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    background-color: #19587d;
+    padding: 150px; 
+    background-position: center top;
+    height: 830px;
+}
+
+
+
+.up-bar{
+    border-top: #4e4d4d 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 109px;
+    
+
+}
+
+.left-bar{
+    height: 6900px;
+    left: 1155px;
+    top: 0px;
+    border-left: #4e4d4d 2px solid;
+    position: absolute;
+    margin-left: 100px
+}
+
+
+.right-bar{
+    height: 6900px;
+    right: 85%;
+    top: 0px;
+    border-left: #4e4d4d 2px solid;
+    position: absolute;
+    margin-right: 93px
+}
+
+
+
+
+/*Design de la navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+   
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+ul a{
+    color: var(--with-color) ; 
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    margin-left: 20px;  
+}
+
+
+nav ul a:hover{
+color: var(--yellow-color);
+}
+
+.logo-entete:hover{
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+
+.logo-entete{
+    position: relative;
+    top: -130px;
+    right: 80px; 
+}
+
+.accueil{
+    position: relative;
+    top: -130px;
+    left: 80px;
+}
+
+
+
+/*Design de la partie en tete heros */
+
+
+
+#hero .fleche{
+    margin: 20px;
+    padding-left: 20px;
+}
+
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    top: 250px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+/*Design de la section batman personnage */
+
+
+#batman-cinema{
+    margin-top: 40px;
+}
+
+#batman-cinema .personnage-info{
+    font-family: "space grotesk regular";
+    font-size: 22px;
+}
+
+
+
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+
+/*Design de la section Némesis */
+
+.personnage-nemesis{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+#personnage-nemesis .personnage-nemesis{
+    font-family: "space groteskregular";
+    font-size: 22px;
+}
+
+
+
+.membres-allies{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px; 
+}
+
+#personnage-allies .membres-allies{
+    font-family: "space grotesk regular";
+    font-size: 22px;
+}
+
+#hero .titre{
+margin: 20px 0;
+font-family: 'rajdhani';
+font-size: 25px;
+}
+
+#hero .texte{
+    font-family: 'rajdhani';
+    font-size: 22px;
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+
+
+/*faire un blur, un flou: box-shadow: var(--black-color) 5px 5px 60px;*/
+
+.btn{
+    text-decoration: none;
+    color: var(--with-color);
+    font-size: 22px;
+    padding: 15px 35px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 5px 5px 80px;
+    font-family: "rajdhani medium";
+    font-size: 20px;  
+    margin-right: 30px;
+}
+
+.cta{
+    margin: 30px;
+
+    margin-left: 40px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+    
+}
+
+.content{
+    position: relative;
+    margin-top: -495px;
+    padding: 50px;
+    left: 10px;
+}
+
+
+/*mettre un titre en majuscule*/
+
+#batman-cinema .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+    margin-left: 60px;
+    font-size: "rajdhani medium" 36px;
+}
+
+
+
+#batman-cinema .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 60px;
+    font-family: "space grotesk regular";
+    font-size: 18px;
+      
+}
+
+#personnage-nemesis .souhait-batman{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 60px;
+    font-family: "space grotesk regular";
+    font-size: 18px;
+}
+
+#personnage-nemesis .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+    margin-left: 60px;
+    
+}
+
+
+#personnage-nemesis .personnage-nemesis{
+    text-align: center;
+}
+
+
+#batman-cinema .personnage-info{
+    text-align: center;
+}
+
+
+
+#personnage-allies .alfred{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 60px;
+    font-family: "space grotesk regular";
+    font-size: 18px;
+}
+#personnage-allies .membres-allies{
+    text-align: center;
+}
+
+#personnage-allies .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+    margin-left: 60px;
+    
+}
+
+#justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+    margin-left: 60px;
+}
+
+#justice-league .terre{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 60px;
+    font-family: "space grotesk regular";
+    font-size: 18px;
+    
+}
+
+
+
+/*design de la partie multi-media*/
+
+.slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto; 
+}
+
+/*garder l'image a sa taille d'origine*/
+
+.slider-image{
+width: 100%;
+}
+
+
+/*bordure du texte multimedia*/
+
+.slider-content{
+    padding: 15px;
+    background-color: var(--content-color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    top: -4px;
+    
+}
+
+
+
+#multimedia p{
+    font-size: 16px;
+    margin: 10px;  
+}
+
+#multimedia .titre-multimedia{
+    font-family: "rajdhani medium";
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 60px;
+}
+
+
+/*mettre en place les boutons*/
+
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right{
+    right: -90%;
+}
+
+
+#multimedia h2{
+    font-size: 14px;
+}
+
+#multimedia span{
+    color: #e4e43d;
+}
+
+
+/*image bande d'annonce*/
+
+
+
+
+
+
+/*design de la partie contact formulaire*/
+
+#formulaire {
+    background-color: #363434;
+    padding: 90px 0;
+}
+
+#formulaire .enregistrement{
+    font-family: "rajdhani medium";
+    font-size: 36px;
+    text-align: justify;
+    margin-left: 60px;
+    text-align: center; 
+    height: 90px;
+}
+
+#formulaire .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#formulaire h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#formulaire .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+
+
+#formulaire .form input[type="email"], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 110%;
+    border-bottom: 2px solid #808080;
+    background: transparent;
+    padding: 5px;
+
+}
+
+#formulaire .frequence{
+    margin: 20px 0;
+    padding: 5px;
+    width: 110%;
+    border-bottom: 2px solid #808080;
+}
+
+
+/*icon formulaire*/
+
+#formulaire .titre{
+    font-family: "space grotesk regular";
+    font-size: 22px;
+}
+
+
+
+#formulaire .icon img{
+    transform: rotate(90deg);
+    width: 20px; 
+    padding: auto;
+    position: relative;
+    right: -35%;
+}
+
+::placeholder{
+    color: #808080;
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#formulaire input[type="radio"]{
+    opacity: 0;
+}
+
+#formulaire label{
+    cursor: pointer;   
+}
+
+.btn-group label{
+    border: 1px solid;
+    padding: 10px;
+    margin: 2px;
+    width: 25%;
+    text-align: center;
+    border-image: linear-gradient(69deg, #a5a1a1, rgb(118, 118, 163)) 1;   
+    font-family: "rajdhani medium";
+    font-size: 20px;
+}
+
+#formulaire .cocher, .choisir, .news, .communaute{
+    font-family: "space grotesk regular";
+    font-size: 12px;
+}
+
+
+
+
+
+input[type="submit"]{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    cursor: pointer;
+    padding: 15px 0;
+    font-family: "rajdhani medium";
+    font-size: 20px;
+    background: linear-gradient(#a9a6ac, #af3137);
+  
+}
+
+
+
+#a9a6ac, #af3137
+
+
+
+
+#citation {
+    margin: 90px;
+}
+
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+#citation .citation-auteur{
+    text-align: center;
+    width: 0 auto;
+    padding-top: 30px;
+    font-size: 15px;
+    font-size: 18px;
+    font-family: "space grotesk regular";
+    
+}
+
+#citation .citation-auteur{
+    font-family: 'rajdhani medium';
+    font-size: 12px;
+    
+}
+
+#citation .guillemet-close{
+    float: right;
+}
+
+/*design du footer*/
+
+footer{
+    margin-top: 180px;
+}
+
+.texte-footer{
+    text-align: center;
+    font-family: 'rajdhani';
+    font-size: 12px;
+}
+
+
+
+.social-footer{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+footer .social-item{
+    padding: 10px;
+    
+}
+
