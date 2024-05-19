@@ -639,6 +639,55 @@ width: 100%;
 
 /*design de la partie contact formulaire*/
 
+
+.hidden {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #popup {
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #3bd12d;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .popup-content {
+    text-align: center;
+    
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #formulaire {
     background-color: #363434;
     padding: 90px 0;
@@ -688,6 +737,7 @@ width: 100%;
     padding: 5px;
     width: 110%;
     border-bottom: 2px solid #808080;
+    border: none;
 }
 
 
@@ -702,10 +752,12 @@ width: 100%;
 
 #formulaire .icon img{
     transform: rotate(90deg);
-    width: 20px; 
+    width: 15px; 
     padding: auto;
     position: relative;
     right: -35%;
+    padding: -1px;
+    
 }
 
 ::placeholder{
