@@ -5,6 +5,48 @@
     src: url(../police/Rajdhani-Medium.ttf);
 }
 
+
+/*fonctionnalité Fade-in sur texte-titre-illustrations*/
+
+
+.Fade-in-texte {
+    font-family: Arial;
+    font-size: 60px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+
 :root{
     --yellow-color: #FFFF00;
     --yellow-light: #f8f184;
@@ -14,6 +56,8 @@
     --gradient-red:#89000923;
     --black-color:#000;
     --content-color: #c4c4c442;
+    --gradient-grey:#808080;
+    --gradient-red:#611414;
 }
 
 *{
@@ -29,6 +73,10 @@ h1{
     font-family: 'rajdhani';
     font-size: 36px;
     font-weight: 400;
+}
+
+.texte-batm{
+    font-size: 36px;  
 }
 
 
@@ -64,43 +112,61 @@ header{
     padding: 150px; 
     background-position: center top;
     height: 830px;
+    
 }
 
 
 
 .up-bar{
-    border-top: #4e4d4d 2px solid;
+    border-top: #BCBBBD 5px solid;
     position: relative;
     top: 132px;
-    width: 85%;
-    left: 109px;
+    width: 87.3%;
+    left: 100px;
     
 
 }
 
+
 .left-bar{
-    height: 6900px;
-    left: 1155px;
+    height: 7600px;
+    left: 87%;
     top: 0px;
-    border-left: #4e4d4d 2px solid;
+    border-left: #a79696 3px solid;
     position: absolute;
-    margin-left: 100px
+    margin-left: 102px
+    
 }
 
 
 .right-bar{
-    height: 6900px;
+    height: 7600px;
     right: 85%;
     top: 0px;
-    border-left: #4e4d4d 2px solid;
+    border-left: #a79696 3px solid;
     position: absolute;
-    margin-right: 93px
+    margin-right: 102px
+}
+
+.up-bar{
+    opacity: 20%; 
+}
+
+.left-bar{
+    opacity: 20%;  
+}
+
+.right-bar{
+    opacity: 20%;
 }
 
 
 
-
 /*Design de la navigation */
+
+
+
+    
 
 nav{
     display: flex;
@@ -116,7 +182,7 @@ ul{
 }
 
 
-ul a{
+nav ul a{
     color: var(--with-color) ; 
     font-size: 25px;
     font-weight: 500;
@@ -125,12 +191,40 @@ ul a{
 }
 
 
-nav ul a:hover{
+nav ul .logo-entete:hover{
 color: var(--yellow-color);
+
 }
 
 .logo-entete:hover{
     filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+
+
+
+
+nav ul .accueil:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+
+
+.accueil:hover{
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+
+
+.scroll a:hover{
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);  
+}
+
+.social:hover{
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+    cursor: pointer; 
 }
 
 
@@ -163,8 +257,8 @@ color: var(--yellow-color);
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 40px;
-    top: 250px;
+    right: 20px;
+    top: 200px;
 }
 
 .scroll .social{
@@ -180,7 +274,7 @@ color: var(--yellow-color);
 
 #batman-cinema .personnage-info{
     font-family: "space grotesk regular";
-    font-size: 22px;
+    font-size: 18px;
 }
 
 
@@ -206,8 +300,28 @@ color: var(--yellow-color);
 
 #personnage-nemesis .personnage-nemesis{
     font-family: "space groteskregular";
-    font-size: 22px;
+    font-size: 18px;
 }
+
+#personnage-nemesis .titre{
+    background-image: url(../Illustrations/Bathome13.png);
+    background-size: 65%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 35px 0;
+    padding-top: 80px;
+    width: 20%;
+}
+
+#personnage-nemesis{
+    background-image: url(../Illustrations/Bathome12.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 150px;
+}
+
 
 
 
@@ -220,7 +334,7 @@ color: var(--yellow-color);
 
 #personnage-allies .membres-allies{
     font-family: "space grotesk regular";
-    font-size: 22px;
+    font-size: 17px;
 }
 
 #hero .titre{
@@ -231,13 +345,17 @@ font-size: 25px;
 
 #hero .texte{
     font-family: 'rajdhani';
-    font-size: 22px;
+    font-size: 20px;
+    margin: 10px;
+   
 }
+
+
 
 #hero .fleche{
     display: block;
     margin: 0 auto;
-    margin-top: 285px;
+    margin-top: 210px;
 }
 
 
@@ -246,22 +364,50 @@ font-size: 25px;
 .btn{
     text-decoration: none;
     color: var(--with-color);
-    font-size: 22px;
-    padding: 15px 35px;
+    font-size: 18px;
+    padding: 15px 30px;
     margin-top: 10px;
     background: linear-gradient(
-        80deg,var(--gradient-white),var(--gradient-red)
+        10deg,var(--gradient-white),var(--gradient-red)
     );
-    box-shadow: var(--black-color) 5px 5px 80px;
+    box-shadow: var(--black-color) 15px 15px 50px;
     font-family: "rajdhani medium";
     font-size: 20px;  
-    margin-right: 30px;
+    margin: 20px;
+    opacity: 40%;
+     
+   
 }
+
+
+
+.btn:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+
+  
+/* Modification de la couleur du fond en dégradé */
+
+
+.btn:hover {
+    background: linear-gradient(45deg, rgb(197, 153, 141) 40%, rgb(219, 125, 94) 100%); 
+}
+
+
+
+
 
 .cta{
     margin: 30px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
 
-    margin-left: 40px;
 }
 
 .content{
@@ -293,10 +439,41 @@ font-size: 25px;
     font-size: "rajdhani medium" 36px;
 }
 
+/*hover photo des personnages*/
+
+.batman-item:hover{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.personnage-item:hover{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.allies-item:hover{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: scale(110%);
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+
+
 
 
 #batman-cinema .description{
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     text-align: justify;
     width: 80%;
     margin-left: 60px;
@@ -381,6 +558,8 @@ font-size: 25px;
     margin: 40px auto; 
 }
 
+
+
 /*garder l'image a sa taille d'origine*/
 
 .slider-image{
@@ -396,15 +575,18 @@ width: 100%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     position: relative;
-    top: -4px;
+    top: -14px;
     
 }
 
+/*texte multi-media*/
 
 
 #multimedia p{
-    font-size: 16px;
-    margin: 10px;  
+    font-size: 15px;
+    margin: 10px; 
+    font-family: "space grotesk regular"; 
+
 }
 
 #multimedia .titre-multimedia{
@@ -417,6 +599,9 @@ width: 100%;
 }
 
 
+
+
+
 /*mettre en place les boutons*/
 
 #multimedia button{
@@ -424,6 +609,7 @@ width: 100%;
     top: 155px;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 #multimedia button.right{
@@ -442,7 +628,11 @@ width: 100%;
 
 /*image bande d'annonce*/
 
-
+#multimedia .imagebd, .player1{
+ padding: 90px 0;
+ padding-left: 30px;
+ cursor: pointer;   
+}
 
 
 
@@ -547,7 +737,14 @@ width: 100%;
     border-image: linear-gradient(69deg, #a5a1a1, rgb(118, 118, 163)) 1;   
     font-family: "rajdhani medium";
     font-size: 20px;
+    opacity: 40%;
 }
+
+.btn-group label:hover{
+    opacity: 100%;
+}
+
+
 
 #formulaire .cocher, .choisir, .news, .communaute{
     font-family: "space grotesk regular";
@@ -561,25 +758,43 @@ width: 100%;
 input[type="submit"]{
     display: block;
     width: 230px;
+    color: var(--with-color);
     margin: 25px auto;
     cursor: pointer;
     padding: 15px 0;
     font-family: "rajdhani medium";
     font-size: 20px;
-    background: linear-gradient(#a9a6ac, #af3137);
-  
+    border: none;
+    background: linear-gradient(90deg,var(--gradient-grey),var(--gradient-red));
+
+    box-shadow: var(--black-color) 15px 15px 50px;
+    font-family: "rajdhani medium";
+    font-size: 20px;  
+    
+    opacity: 40%;
+
+}
+
+
+.submi:hover{
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 100%;
 }
 
 
 
-#a9a6ac, #af3137
+
+
 
 
 
 
 #citation {
     margin: 90px;
+    
 }
+
 
 #citation .citation-carte{
     text-align: center;
@@ -601,8 +816,16 @@ input[type="submit"]{
 #citation .citation-auteur{
     font-family: 'rajdhani medium';
     font-size: 12px;
+    padding-top: 30px;
     
 }
+
+
+#citation .container{
+    padding: 130px;
+    
+}
+
 
 #citation .guillemet-close{
     float: right;
@@ -611,16 +834,20 @@ input[type="submit"]{
 /*design du footer*/
 
 footer{
-    margin-top: 180px;
+    margin-top: 100px;
+    
+    
 }
 
 .texte-footer{
     text-align: center;
     font-family: 'rajdhani';
-    font-size: 12px;
+    font-size: 12px;  
 }
 
-
+#texte-footer .icone-wb{
+    height: 90px; 
+}
 
 .social-footer{
     text-align: center;
@@ -628,8 +855,50 @@ footer{
     
 }
 
-footer .social-item{
+footer .social-item1, .social-item2, .social-item3, .logo-x{
     padding: 10px;
     
 }
 
+footer .logo-s{
+    height: 40px;
+}
+footer .logo-dc{
+    height: 40px;
+}
+
+/*hover du footer*/
+
+
+.logo-s:hover{
+    color: var(--yellow-color);
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+    }
+    
+
+.logo-x:hover{
+    color: var(--yellow-color);
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+
+.logo-dc:hover{
+    color: var(--yellow-color);
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+
+.social-item1:hover{
+    color: var(--yellow-color);
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+.social-item2:hover{
+    color: var(--yellow-color);
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%);
+}
+
+.social-item3:hover{
+    color: var(--yellow-color);
+    filter: invert(4%) sepia(100%) saturate(1553%) hue-rotate(2deg) brightness(105%) contrast(103%); 
+}
