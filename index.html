@@ -343,9 +343,7 @@
     </div>
     </div>
 </section>
-                   
-
-                
+                         
             </section>
 
             <! -- FORMULAIRE -->
@@ -353,39 +351,75 @@
             <section id="formulaire">
                 <div class="container">
                     <div class="form">
+                                   
+                        <form id="myForm">      
 
                         <h2 class="enregistrement">PRENOMS CONTACT</h2>
                         <form action="">
                             <label class="titre" for="email">ADRESSE MAIL</label>
                             <input type="email" name="email" placeholder="Adresse email"> <br>
+
                             <label class="titre" for="newsletter">NEWSLETTER</label> <br>
                             <label class="cocher" for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
-                                Batman :</label> 
-                                <input type="checkbox">
+                                Batman :</label>
+                                <label><input type="checkbox" id="confirmCheckbox" required></label> <br>
+
+
+                                <! -- checkbox-frequence-->
+
                                 <br>
                                 <div class="frequence">
                                     <span class="choisir">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+              
                                     <span class="icon"><img src="./assets/Logos/icon_flèche_2.png" alt=""></span>
+
+                                        <select id="frequency" required>
+
+                                            <option value=""> Choisissez la fréquence</option>
+                                            <option value="jour">Par jour</option>
+                                            <option value="semaine">Par semaine</option>
+                                            <option value="mois">Par mois</option>
+                                          </select><br>        
                                 </div> <br>
                                 <div>
                                     <p class="news">Souhaitez-vous recevoir des news</p>
 
+
+                                    <! -- checkbox-->
+
+
+                                    <div id="themes">
+
                                     <div class="btn-group">
-                                        <input type="radio" id="film">
+                                        <input type="checkbox" id="film">
                                         <label for="">Des films</label>
-                                        <input type="radio" id="Des Comics">
+                                        <input type="checkbox" id="Des Comics">
                                         <label for="">Des Comics</label>
-                                        <input type="radio" id="De tout">
+                                        <input type="checkbox" id="De tout">
                                         <label for="">De tout</label>
                                     </div>
+
+                                </div>
+
+
+
+                            
                                     <p class="titre">MESSAGE</p>
                                     <textarea class="communaute" name="" id=""  placeholder="Laissez un commentaire pour la communauté"></textarea> <br>
                                     <input class="submi" type="submit" value="CONFIRMER"> 
 
-
+                                    <div id="popup" class="hidden">
+                                        <div class="popup-content">
+                                          <span class="close-btn">&times;</span>
+                                          <p>Opération effectuée avec succès!</p>
+                                        </div>
+                                      </div>
+                                    
+                                      <script src="script.js"></script>
                                     
                                 </div>  
                         </form>
+
                     </div> 
                     <br>
                     </div>
