@@ -15,3 +15,5 @@ form.addEventListener('submit', function(event) {
 closeButton.addEventListener('click', function() {
   popup.classList.add('hidden');
 });
+
+
