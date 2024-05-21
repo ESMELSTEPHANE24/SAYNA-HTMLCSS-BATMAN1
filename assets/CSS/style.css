@@ -9,42 +9,7 @@
 /*fonctionnalité Fade-in sur texte-titre-illustrations*/
 
 
-.Fade-in-texte {
-    font-family: Arial;
-    font-size: 60px;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
-  }
-  
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
 
 
 :root{
@@ -634,9 +599,6 @@ width: 100%;
  cursor: pointer;   
 }
 
-
-
-
 /*design de la partie contact formulaire*/
 
 
@@ -673,20 +635,6 @@ width: 100%;
   .close-btn:hover {
     color: red;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #formulaire {
     background-color: #363434;
@@ -737,7 +685,7 @@ width: 100%;
     padding: 5px;
     width: 110%;
     border-bottom: 2px solid #808080;
-    border: none;
+    
 }
 
 
@@ -747,8 +695,6 @@ width: 100%;
     font-family: "space grotesk regular";
     font-size: 22px;
 }
-
-
 
 #formulaire .icon img{
     transform: rotate(90deg);
@@ -790,22 +736,45 @@ width: 100%;
     font-family: "rajdhani medium";
     font-size: 20px;
     opacity: 40%;
+    
 }
+
+
+/*Menu deroulant*/
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  
+  select {
+    padding: 8px 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #363434;
+    cursor: pointer;
+    margin: -42px;
+    color: white;
+    font-family: "space grotesk regular";
+    width: 600px;
+    border-color: #808080;
+   
+  }
+  
+
+
+
+
 
 .btn-group label:hover{
     opacity: 100%;
 }
 
-
-
 #formulaire .cocher, .choisir, .news, .communaute{
     font-family: "space grotesk regular";
     font-size: 12px;
+    
 }
-
-
-
-
 
 input[type="submit"]{
     display: block;
@@ -818,11 +787,9 @@ input[type="submit"]{
     font-size: 20px;
     border: none;
     background: linear-gradient(90deg,var(--gradient-grey),var(--gradient-red));
-
     box-shadow: var(--black-color) 15px 15px 50px;
     font-family: "rajdhani medium";
     font-size: 20px;  
-    
     opacity: 40%;
 
 }
@@ -833,12 +800,6 @@ input[type="submit"]{
     font-weight: bold;
     opacity: 100%;
 }
-
-
-
-
-
-
 
 
 
