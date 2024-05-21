@@ -362,31 +362,31 @@
                             <label class="titre" for="newsletter">NEWSLETTER</label> <br>
                             <label class="cocher" for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
                                 Batman :</label>
-                                <label><input type="checkbox" id="confirmCheckbox" required></label> <br>
+                                <label><input type="checkbox" id="confirmCheckbox" required></label>
+                                <input type="radio">
 
-
-                                <! -- checkbox-frequence-->
+                                <! -- Menu deroulant-->
 
                                 <br>
+
                                 <div class="frequence">
-                                    <span class="choisir">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+
               
-                                    <span class="icon"><img src="./assets/Logos/icon_flèche_2.png" alt=""></span>
-
+                                    <div class="dropdown">
                                         <select id="frequency" required>
+                                          <option value=""selected>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                                          <option value="jour">Jour</option>
+                                          <option value="semaine">Semaine</option>
+                                          <option value="mois">Mois</option>
+                                        </select>
+                                      </div>
 
-                                            <option value=""> Choisissez la fréquence</option>
-                                            <option value="jour">Par jour</option>
-                                            <option value="semaine">Par semaine</option>
-                                            <option value="mois">Par mois</option>
-                                          </select><br>        
-                                </div> <br>
-                                <div>
+                                <div> <br>
+                                    
                                     <p class="news">Souhaitez-vous recevoir des news</p>
 
 
                                     <! -- checkbox-->
-
 
                                     <div id="themes">
 
