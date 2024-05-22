@@ -356,20 +356,22 @@
 
                                 <br>
 
-                                <div class="frequence">
-
-                                    <div class="dropdown">
-                                        <select id="frequency" required>
-                                          <option value=""selected>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
-                                          <option value="jour">Jour</option>
-                                          <option value="semaine">Semaine</option>
-                                          <option value="mois">Mois</option>
-                                        </select>
-                                      </div>
-
-                                <div> <br>
-                                    
-                                    <p class="news">Souhaitez-vous recevoir des news</p>
+                                
+                                <div class="dropdown">
+                                    <input type="text" id="news" name="news" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter" readonly>
+                                    <span class="icon">
+                                      <img src="./assets/Logos/icon_flèche_2.png" alt="Flèche">
+                                    </span>
+                                    <ul class="menu">
+                                        <strong>
+                                            <li data-value="jour"><label for="jour">Jour</label><input type="checkbox" id="jour"></li>
+                                            <li data-value="semaine"><label for="semaine">Semaine</label><input type="checkbox" id="semaine"></li>
+                                            <li data-value="mois"><label for="mois">Mois</label><input type="checkbox" id="mois"></li>
+                                          </ul>
+                                        </strong>
+                                      
+                                    </ul>
+                                  </div>
 
                                     <! -- checkbox-->
 
