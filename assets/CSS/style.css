@@ -6,10 +6,46 @@
 }
 
 
-/*fonctionnalité Fade-in sur texte-titre-illustrations*/
+/*fonctionnalité slide-in sur texte-titre-illustrations*/
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+  
+  .slide-in {
+    animation: slideInLeft 1s ease-out forwards; 
+  }
+  
+  
+  .slide-in:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .slide-in:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .slide-in:nth-child(3) {
+    animation-delay: 0.6s;
+  }
 
 
-
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%); /* Commence à 100% de largeur à gauche de sa position initiale */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Arrive à sa position initiale */
+    }
+  }
+  
 
 :root{
     --yellow-color: #FFFF00;
@@ -101,6 +137,7 @@ header{
     margin-left: 102px
     
 }
+
 
 
 .right-bar{
@@ -633,7 +670,10 @@ width: 100%;
 #formulaire {
     background-color: #363434;
     padding: 90px 0;
+    
 }
+
+
 
 #formulaire .enregistrement{
     font-family: "rajdhani medium";
