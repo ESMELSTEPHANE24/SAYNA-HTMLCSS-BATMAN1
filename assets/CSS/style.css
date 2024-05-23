@@ -744,6 +744,7 @@ width: 100%;
     cursor: pointer;
     box-sizing: border-box;
     font-family: "space grotesk";
+    font-size: 22px;
     background: transparent;
     border-top: none;
     border-right: none;
@@ -751,8 +752,12 @@ width: 100%;
     border-bottom: 2px solid #808080;
     margin-left: -5px;
     
+    
   }
   
+
+
+
   .icon {
     position: absolute;
     top: 50%;
@@ -812,16 +817,55 @@ width: 100%;
 
 /*design checkbox*/
 
+#themes input{
+    visibility: hidden;
+}
 
 .btn-group label:hover{
     opacity: 100%;
 }
 
-#formulaire .cocher, .choisir, .news, .communaute{
-    font-family: "space grotesk regular";
-    font-size: 12px;
+#formulaire , .choisir, .news, .communaute{
+    font-family: "space grotesk";
+    font-size: 18px;
+    color: #808080;
     
 }
+
+#formulaire .cocher{
+    font-size: 15px;
+}
+
+.info-news{
+    position: relative;
+    font-family: "space grotesk";
+    font-size: 15px;
+    padding: 26px;
+    color: #808080;
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
+    
+   
+}
+.info-news{
+    width: 600px;
+    margin: 10px;
+    left: -15px;
+   
+}
+
+
+
+.enregistrement{
+    color: white;
+}
+
+.titre{
+    color: white;  
+}
+
+
+
 
 input[type="submit"]{
     display: block;
